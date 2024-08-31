@@ -9,7 +9,11 @@ export default function TiktokResultDisplay({ apiData }) {
       >
         <img
           src={apiData.data.cover}
-          alt={apiData.data.title}
+          alt={
+            apiData.data.title
+              ? apiData.data.title
+              : "Mungkin tautan yang diinputkan tidak memiliki judul? 🤔"
+          }
           className="w-full h-full object-cover overflow-hidden"
         />
       </a>
@@ -22,7 +26,7 @@ export default function TiktokResultDisplay({ apiData }) {
           </p>
         ) : (
           <p className="sub-header-font-size text-dark-base">
-            This URL doesn't contain title maybe 🤔
+            Mungkin tautan yang diinputkan tidak memiliki judul? 🤔
           </p>
         )}
         <div className="flex gap-4">

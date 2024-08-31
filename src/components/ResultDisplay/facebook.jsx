@@ -6,7 +6,11 @@ export default function FacebookResultDisplay({ apiData }) {
       <a href={apiData.sd} className="group inline-block max-w-fit md:w-1/3">
         <img
           src={apiData.thumbnail}
-          alt={apiData.title}
+          alt={
+            apiData.title
+              ? apiData.title
+              : "Mungkin tautan yang diinputkan tidak memiliki judul? 🤔"
+          }
           className="w-full h-full object-cover overflow-hidden"
         />
       </a>
@@ -19,7 +23,7 @@ export default function FacebookResultDisplay({ apiData }) {
           </p>
         ) : (
           <p className="sub-header-font-size text-dark-base">
-            This URL doesn't contain title maybe 🤔
+            Mungkin tautan yang diinputkan tidak memiliki judul? 🤔
           </p>
         )}
         <div className="flex gap-4">

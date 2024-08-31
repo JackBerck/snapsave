@@ -9,13 +9,13 @@ export default function InstagramResultDisplay({ apiData }) {
       >
         <img
           src={apiData.data[0].thumbnail}
-          alt="This URL doesn't contain title maybe 🤔"
+          alt="Mungkin tautan yang diinputkan tidak memiliki judul? 🤔"
           className="w-full h-full object-cover overflow-hidden"
         />
       </a>
       <div className="flex flex-col w-3/4 p-4 gap-4">
         <p className="sub-header-font-size text-dark-base">
-          This URL doesn't contain title maybe 🤔
+          Mungkin tautan yang diinputkan tidak memiliki judul? 🤔
         </p>
         <div className="flex gap-4">
           <a

@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 export default function TwitterPage() {
   return (
     <Layout>
-      <Hero />
+      <Hero title={"Download apapun yang ada di Twitter dengan mudah"} />
     </Layout>
   );
 }

@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 export default function FacebookPage() {
   return (
     <Layout>
-      <Hero />
+      <Hero title={"Download apapun yang ada di Facebook dengan mudah"} />
     </Layout>
   );
 }

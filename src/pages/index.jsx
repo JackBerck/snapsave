@@ -7,7 +7,7 @@ import Tutorial from "../components/Tutorial";
 export default function Homepage() {
   return (
     <Layout>
-      <Hero />
+      <Hero title={"Download video, audio, dan foto dengan mudah"} />
       <AboutUs />
       <Tutorial />
     </Layout>
