@@ -12,10 +12,10 @@ export default function NavigationBar() {
   };
 
   return (
-    <nav className="section-padding-x absolute w-full top-0 left-0 py-4">
+    <nav className="section-padding-x fixed w-full top-0 left-0 py-4">
       <div className="flex flex-wrap bg-slate-200 border-4 border-dark-base max-w-screen-lg container items-center justify-between p-3">
         <a
-          href="#"
+          href="/"
           className="text-2xl md:text-3xl font-bold text-primary font-josefin"
         >
           Simpen.an
@@ -30,7 +30,6 @@ export default function NavigationBar() {
             isMenuOpen ? "block" : "hidden"
           } w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-dark-base md:border-none`}
         >
-          <NavLink href="/youtube">YouTube</NavLink>
           <NavLink href="/facebook">Facebook</NavLink>
           <NavLink href="/instagram">Instagram</NavLink>
           <NavLink href="/twitter">Twitter</NavLink>

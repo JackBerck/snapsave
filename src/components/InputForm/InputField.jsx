@@ -3,7 +3,7 @@ import React from "react";
 export default function InputField({ handleSubmit, handleChange, inputValue }) {
   return (
     <form
-      className="flex flex-col md:flex-row items-center justify-between w-full md:w-3/5 gap-4"
+      className="flex flex-col md:flex-row items-center justify-between w-full md:w-3/5 gap-4 mb-4"
       onSubmit={handleSubmit}
     >
       <input

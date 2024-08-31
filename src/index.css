@@ -15,7 +15,7 @@
 }
 
 .normal-font-size {
-  @apply text-sm sm:text-base;
+  @apply text-base sm:text-lg lg:text-xl;
 }
 
 .small-font-size {

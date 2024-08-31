@@ -20,6 +20,8 @@ export default function InputForm() {
     setInputValue(e.target.value);
   };
 
+  console.log(apiData);
+
   return (
     <>
       <InputField
@@ -29,7 +31,7 @@ export default function InputForm() {
       />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
-      {apiData && <ResultDisplay apiData={apiData} />}
+      {apiData && <ResultDisplay apiData={apiData} url={inputValue} />}
     </>
   );
 }

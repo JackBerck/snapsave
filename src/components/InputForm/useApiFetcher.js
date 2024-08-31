@@ -7,26 +7,28 @@ export default function useApiFetcher(encodedValue) {
 
   useEffect(() => {
     if (encodedValue) {
-      const decodedUrl = decodeURIComponent(encodedValue);
-      let apiUrl = "";
-      if (decodedUrl.includes("facebook.com")) {
+      const decodedValue = decodeURIComponent(encodedValue);
+      let apiUrl;
+
+      if (decodedValue.indexOf("facebook.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/fbdl?url=${encodedValue}`;
-      } else if (decodedUrl.includes("instagram.com")) {
+      } else if (decodedValue.indexOf("instagram.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/igdl?url=${encodedValue}`;
-      } else if (decodedUrl.includes("tiktok.com")) {
-        apiUrl = `https://api.ryzendesu.vip/api/downloader/ttdl?url=${encodedValue}`;
-      } else if (decodedUrl.includes("twitter.com")) {
+      } else if (decodedValue.indexOf("x.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/twitter?url=${encodedValue}`;
+      } else if (decodedValue.indexOf("tiktok.com") !== -1) {
+        apiUrl = `https://api.ryzendesu.vip/api/downloader/ttdl?url=${encodedValue}`;
       } else {
-        alert("URL tidak valid. Hanya mendukung URL dari facebook.com.");
+        alert("Invalid URL");
+        return;
       }
+
       setLoading(true);
       fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
           setApiData(data);
           setLoading(false);
-          console.log(encodedValue);
         })
         .catch((error) => {
           setError(error);

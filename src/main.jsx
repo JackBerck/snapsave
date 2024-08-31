@@ -1,7 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Homepage from "./pages/homepage";
+import Homepage from "./pages/";
+import FacebookPage from "./pages/facebook";
+import InstagramPage from "./pages/instagram";
+import TwitterPage from "./pages/twitter";
+import TiktokPage from "./pages/tiktok";
 import "./index.css";
 
 // Buat objek router menggunakan createBrowserRouter
@@ -9,6 +13,22 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+  },
+  {
+    path: "/facebook",
+    element: <FacebookPage />,
+  },
+  {
+    path: "/instagram",
+    element: <InstagramPage />,
+  },
+  {
+    path: "/twitter",
+    element: <TwitterPage />,
+  },
+  {
+    path: "/tiktok",
+    element: <TiktokPage />,
   },
 ]);
 
