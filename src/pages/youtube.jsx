@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 export default function YoutubePage() {
   return (
     <Layout>
-      <Hero title={"Download apapun yang ada di YouTube dengan mudah"} />
+      <Hero title={"Download anything on YouTube easily"} />
     </Layout>
   );
 }

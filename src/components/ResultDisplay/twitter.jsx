@@ -9,13 +9,13 @@ export default function TwitterResultDisplay({ apiData }) {
       >
         <video
           src={apiData.media[0].url}
-          alt="Mungkin tautan yang diinputkan tidak memiliki judul? 🤔"
+          alt="Perhaps the entered link does not have a title? 🤔"
           className="w-full h-full object-cover overflow-hidden"
         />
       </a>
       <div className="flex flex-col w-3/4 p-4 gap-4">
         <p className="sub-header-font-size text-dark-base">
-          Mungkin tautan yang diinputkan tidak memiliki judul? 🤔
+          Perhaps the entered link does not have a title? 🤔
         </p>
         <div className="flex gap-4">
           <a

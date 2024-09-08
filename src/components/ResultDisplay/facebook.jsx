@@ -9,7 +9,7 @@ export default function FacebookResultDisplay({ apiData }) {
           alt={
             apiData.title
               ? apiData.title
-              : "Mungkin tautan yang diinputkan tidak memiliki judul? 🤔"
+              : "Maybe the entered link doesn't have a title? 🤔"
           }
           className="w-full h-full object-cover overflow-hidden"
         />
@@ -23,7 +23,7 @@ export default function FacebookResultDisplay({ apiData }) {
           </p>
         ) : (
           <p className="sub-header-font-size text-dark-base">
-            Mungkin tautan yang diinputkan tidak memiliki judul? 🤔
+            Maybe the entered link doesn't have a title? 🤔
           </p>
         )}
         <div className="flex gap-4">

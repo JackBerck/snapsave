@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 export default function TiktokPage() {
   return (
     <Layout>
-      <Hero title={"Download apapun yang ada di TikTok dengan mudah"} />
+      <Hero title={"Download anything on TikTok easily"} />
     </Layout>
   );
 }

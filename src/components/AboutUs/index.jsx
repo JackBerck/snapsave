@@ -3,20 +3,20 @@ export default function AboutUs() {
     <div className="section-padding-x pt-16 pb-16 text-dark-base">
       <div className="container max-w-screen-lg">
         <h2 className="text-center sub-header-font-size font-black">
-          Tentang Kami
+          About Us
         </h2>
         <p className="normal-font-size font-semibold text-justify">
-          Simpen.an adalah platform canggih untuk mengunduh video, audio, dan
-          foto yang bisa diakses dengan mudah kapan saja. Simpan media favorit
-          kamu langsung dari web tanpa ribet instal aplikasi tambahan. Dengan
-          antarmuka yang super simpel, mengunduh video jadi cepat dan tanpa
-          hambatan.
+          SnapSave is an advanced platform for downloading videos, audios, and
+          photos that can be accessed easily anytime. Save your favorite media
+          directly from the web without the hassle of installing additional
+          applications. With a super simple interface, downloading videos
+          becomes fast and seamless.
           <br />
-          Cukup salin dan tempel URL video ke kolom yang tersedia, lalu klik
-          tombol "Download." Ingin lebih praktis?{" "}
+          Simply copy and paste the video URL into the available column, then
+          click the "Download" button. Want more convenience?
           <span className="line-through">
-            Tambahkan saja ekstensi Chrome kami agar proses unduhan makin cepat
-            dan lancar!
+            Just add our Chrome extension for faster and smoother download
+            process!
           </span>
         </p>
       </div>

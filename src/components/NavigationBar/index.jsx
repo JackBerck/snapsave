@@ -18,7 +18,7 @@ export default function NavigationBar() {
           href="/"
           className="text-2xl md:text-3xl font-bold text-primary font-josefin"
         >
-          Simpen.an
+          SnapSave
         </a>
         <div className="flex md:hidden">
           {/* kirim nilai toggleMenu dan isMenuOpen ke HamburgerButton agar bisa berjalan */}

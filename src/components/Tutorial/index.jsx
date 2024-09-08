@@ -3,23 +3,23 @@ export default function Tutorial() {
     <div className="section-padding-x pb-16 text-dark-base">
       <div className="container max-w-screen-lg">
         <h2 className="text-center sub-header-font-size font-black">
-          Panduan Menggunakan Simpen.an
+          How to Use SnapSave
         </h2>
         <ul className="normal-font-size font-semibold text-justify list-decimal">
           <li>
-            Copy URL video YouTube yang ingin diunduh ke kotak input yang
-            terletak di bagian atas halaman web ini.
+            Copy the YouTube video URL that you want to download into the input
+            box located at the top of this web page.
           </li>
           <li>
-            Tekan Enter atau klik tombol "Download" yang berada di sisi kanan
-            kotak tersebut.
+            Press Enter or click the "Download" button on the right side of the
+            input box.
           </li>
           <li>
-            Tunggu beberapa saat hingga video muncul di bawah kotak input.
+            Wait for a few moments until the video appears below the input box.
           </li>
           <li>
-            Klik tombol "Download SD" atau "Download HD" atau aksi lain untuk
-            mengunduh video dalam kualitas yang diinginkan.
+            Click the "Download SD" or "Download HD" button, or perform any
+            other action to download the video in the desired quality.
           </li>
         </ul>
       </div>

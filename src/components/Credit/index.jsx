@@ -2,7 +2,7 @@ export default function Credit() {
   return (
     <div className="flex flex-col items-center">
       <p className="text-center font-semibold normal-font-size">
-        Website ini terinspirasi oleh{" "}
+        This website is inspired by{" "}
         <a
           className="bg-primary text-white-base p-1"
           href="https://savefrom.net/"
@@ -10,7 +10,7 @@ export default function Credit() {
         >
           SaveFrom
         </a>{" "}
-        dan dengan menggunakan layanan{" "}
+        and powered by{" "}
         <a
           className="bg-primary text-white-base p-1"
           href="https://api.ryzendesu.vip/"
