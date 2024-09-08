@@ -30,6 +30,7 @@ export default function NavigationBar() {
             isMenuOpen ? "block" : "hidden"
           } w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-dark-base md:border-none`}
         >
+          <NavLink href="/youtube">YouTube</NavLink>
           <NavLink href="/facebook">Facebook</NavLink>
           <NavLink href="/instagram">Instagram</NavLink>
           <NavLink href="/twitter">Twitter</NavLink>

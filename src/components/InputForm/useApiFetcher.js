@@ -10,7 +10,9 @@ export default function useApiFetcher(encodedValue) {
       const decodedValue = decodeURIComponent(encodedValue);
       let apiUrl;
 
-      if (decodedValue.indexOf("facebook.com") !== -1) {
+      if (decodedValue.indexOf("youtube.com") !== -1) {
+        apiUrl = `https://api.ryzendesu.vip/api/downloader/ytdl?url=${encodedValue}`;
+      } else if (decodedValue.indexOf("facebook.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/fbdl?url=${encodedValue}`;
       } else if (decodedValue.indexOf("instagram.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/igdl?url=${encodedValue}`;

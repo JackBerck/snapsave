@@ -6,6 +6,7 @@ import FacebookPage from "./pages/facebook";
 import InstagramPage from "./pages/instagram";
 import TwitterPage from "./pages/twitter";
 import TiktokPage from "./pages/tiktok";
+import YoutubePage from "./pages/youtube";
 import "./index.css";
 
 // Buat objek router menggunakan createBrowserRouter
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+  },
+  {
+    path: "/youtube",
+    element: <YoutubePage />,
   },
   {
     path: "/facebook",

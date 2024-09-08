@@ -3,10 +3,14 @@ import FacebookResultDisplay from "../ResultDisplay/facebook";
 import InstagramResultDisplay from "../ResultDisplay/instagram";
 import TwitterResultDisplay from "../ResultDisplay/twitter";
 import TiktokResultDisplay from "../ResultDisplay/tiktok";
+import YoutubeResultDisplay from "../ResultDisplay/youtube";
 
 export default function ResultDisplay({ url, apiData }) {
   return (
     <>
+      {url.indexOf("youtube.com") !== -1 && (
+        <YoutubeResultDisplay apiData={apiData} />
+      )}
       {url.indexOf("facebook.com") !== -1 && (
         <FacebookResultDisplay apiData={apiData} />
       )}
