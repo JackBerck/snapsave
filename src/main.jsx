@@ -7,6 +7,7 @@ import InstagramPage from "./pages/instagram";
 import TwitterPage from "./pages/twitter";
 import TiktokPage from "./pages/tiktok";
 import YoutubePage from "./pages/youtube";
+import SpotifyPage from "./pages/spotify";
 import "./index.css";
 
 // Buat objek router menggunakan createBrowserRouter
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/tiktok",
     element: <TiktokPage />,
+  },
+  {
+    path: "/spotify",
+    element: <SpotifyPage />,
   },
 ]);
 

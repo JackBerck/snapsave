@@ -4,6 +4,7 @@ import InstagramResultDisplay from "../ResultDisplay/instagram";
 import TwitterResultDisplay from "../ResultDisplay/twitter";
 import TiktokResultDisplay from "../ResultDisplay/tiktok";
 import YoutubeResultDisplay from "../ResultDisplay/youtube";
+import SpotifyResultDisplay from "../ResultDisplay/spotify";
 
 export default function ResultDisplay({ url, apiData }) {
   return (
@@ -22,6 +23,9 @@ export default function ResultDisplay({ url, apiData }) {
       )}
       {url.indexOf("tiktok.com") !== -1 && (
         <TiktokResultDisplay apiData={apiData} />
+      )}
+      {url.indexOf("spotify.com") !== -1 && (
+        <SpotifyResultDisplay apiData={apiData} />
       )}
     </>
   );

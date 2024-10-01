@@ -20,6 +20,8 @@ export default function useApiFetcher(encodedValue) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/twitter?url=${encodedValue}`;
       } else if (decodedValue.indexOf("tiktok.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/ttdl?url=${encodedValue}`;
+      } else if (decodedValue.indexOf("spotify") !== -1) {
+        apiUrl = `https://api.ryzendesu.vip/api/downloader/spotify?url=${encodedValue}`;
       } else {
         alert("Invalid URL");
         return;

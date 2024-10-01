@@ -14,6 +14,10 @@
   @apply text-xl sm:text-2xl lg:text-3xl;
 }
 
+.down-font-size {
+  @apply text-lg sm:text-xl lg:text-2xl;
+}
+
 .normal-font-size {
   @apply text-base sm:text-lg lg:text-xl;
 }
