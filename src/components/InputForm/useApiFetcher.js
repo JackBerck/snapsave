@@ -11,7 +11,7 @@ export default function useApiFetcher(encodedValue) {
       let apiUrl;
 
       if (decodedValue.indexOf("youtube.com") !== -1) {
-        apiUrl = `https://api.ryzendesu.vip/api/downloader/ytdl?url=${encodedValue}`;
+        apiUrl = `https://api.ryzendesu.vip/api/downloader/ytmp4?url=${encodedValue}`;
       } else if (decodedValue.indexOf("facebook.com") !== -1) {
         apiUrl = `https://api.ryzendesu.vip/api/downloader/fbdl?url=${encodedValue}`;
       } else if (decodedValue.indexOf("instagram.com") !== -1) {
